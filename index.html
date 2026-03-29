@@ -5,28 +5,131 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>とよシローなにシロークイズ</title>
+  　<style>
+    
+      .btn {
+      padding: 12px 32px;
+      font-size: 18px;
+      color: white;
+      background-color: #ff6f61;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 
+        background-color 0.3s,
+        transform 0.2s,
+        box-shadow 0.2s;
+      display: block;
+
+margin: 40px auto;
+    }
+
+    .btn:hover {
+      background-color: #ff3b2f;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    
+.move-out {
+  animation: fadeOut 0.6s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}.waku {
+    padding: 2em 2em;
+    margin: 0.5em 0;
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+    background: #6eb7ff;
+    border-bottom: solid 6px #3f87ce;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.waku p {
+    margin: 0; 
+    padding: 0;
+}
+.rei{
+    margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+}
+.rei:before,.rei:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+.rei:after {
+    top:-12px;
+    left:-12px;
+}
+.rei:before {
+    bottom:-12px;
+    right:-12px;
+}
+.rei p {
+    margin: 0; 
+    padding: 0;
+}
+.ans{
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #b7665b;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.ans p {
+    margin: 0; 
+    padding: 0;
+}
+  </style>
   </head>
   <body>
-    <div style="padding: 1em 1.5em;margin: 2em 0;background-color:#f4f9ff;border:1px solid #84c1ff;box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);color:#000000;">
-     <h1><font color="crimson">とよシローなにシロークイズ！！</font></h1>
+    <div class="waku"
+     <h1>とよシローなにシロークイズ！！</font></h1>
     </div>
     &ensp;
-    <p>このクイズでは様々な格好をしたとよシローが〇〇シローかを考えるクイズだよ！</p>
+    <h3>このクイズは様々な格好をしたとよシローが〇〇シローかを考えるクイズだよ！</h3>
     &ensp;
-    <h2><font color="gold">＜ルール説明＞</font></h2>
-    <ul>
+     <div class="rei">
+      <h2><font color="gold">＜ルール説明＞</font></h2>
+     <ul>
       <li>回答は”とよシロー”みたいに<font color="orange">シローはカタカナ、それ以外はひらがな</font>にしてね!</li>
       <li>今回は△なしの〇か✕かで点数をつけるからクレームはやめてね!</li>
     </ul>
+  </div>
     &emsp;
-    <h2>例題　<font color="fuchsia">これはなにシロー？</font></h2>
-    <p><img src="susiro-.jpg" alt="susiro-" width="300" height="200"></p>
+    <h2 style="text-align:center">例題　<font color="fuchsia">これはなにシロー？</font></h2>
+    <p style="text-align:center"><img src="susiro-.jpg" alt="susiro-" width="450" height="300"></p>
     &nbsp;&nbsp;
     <h2><font color="red">回答　すシロー</font></h2>
-    <p>この問題は簡単だったね！すし職人の格好をしたとよシロー、つまり「すシロー」です。<br>
+    <div class="ans">
+<p>この問題は簡単だったね！すし職人の格好をしたとよシロー、つまり「すシロー」です。<br>
       こんな感じの問題を10問用意したから全問正解目指して頑張ろう!
-    </p>
-    
+    </p></div>
+    &ensp;
+    <button class="btn"　button onclick="goNext()">クイズを始める</button>
   
     <p id="moji"></p>
   <script src="scrippt.js"></script>
