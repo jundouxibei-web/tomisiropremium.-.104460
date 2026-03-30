@@ -39,10 +39,11 @@
 }
 
 .kai {
-  width: 250px;
+  width: 70%;
   padding: 20px;
-  font-size: 16px;
+  font-size: 30px;
   border-radius: 20px;
+  border-width: 10px;
   align-items: center;
   border-color: blanchedalmond;
   outline: none;
@@ -52,18 +53,119 @@
   background-color: #ffffff;
   box-shadow: 0 0 0 2px #ffb74d;
 }
+ .btn1 {
+      padding: 12px 32px;
+      font-size: 18px;
+      color: white;
+      background-color: #ff6f61;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 
+        background-color 0.3s,
+        transform 0.2s,
+        box-shadow 0.2s;
+      display: block;
+
+margin: 40px auto;
+    }
+
+    .btn1:hover {
+      background-color: #ff3b2f;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn1:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    
+.move-out {
+  animation: fadeOut 0.6s forwards;
+}
+
+.answaku{
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+}
+.answaku p {
+    margin: 0; 
+    padding: 0;
+}
+.ans{
+    padding: 0.5em 1em;
+    margin: 4em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #b7665b;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+.ans p {
+    margin: 0; 
+    padding: 0;
+}
+
+ .btn11 {
+      padding: 12px 32px;
+      font-size: 18px;
+      color: white;
+      background-color: #ff6f61;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 
+        background-color 0.3s,
+        transform 0.2s,
+        box-shadow 0.2s;
+      display: block;
+
+margin: 40px auto;
+    }
+
+    .btn11:hover {
+      background-color: #ff3b2f;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn11:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
 
 
 </style>
  <body>
+
     <div class="tite">
-    <div class="box-title"><h1>第１門</h1></div>
+    <div class="box-title"><h1>第１問</h1></div>
     <p><h1>これはなにシロー？</h1></p>
 </div>
  <p style="text-align:center"><img src="trumpetoyosiro-.jpg"  width="100%" height="100%"></p>
     &nbsp;&nbsp;
+    <div class="toi1">
 <h1>回答を入力</h1>
-<div class="kai">
-<input type="text" class="kai" id="toyo1" >
+<input type="text" class="kai" id="toyo1>
+<button class="btn1" button onclick="check1()">答えを見る</button>
 </div>
-<button>回答を見る</button>
+    <div class="kai1" style="display: none;">
+        <div class="answaku">
+           <h1>回答　とらんぺっとよシロー</h1>
+        </div>
+      <div class="ans">
+           <p>さすがに解けたよね！最初の一問だもんね！トランペットを持っているとよシローだから
+             とらんぺっとよシロー。シロー以外はひらがなだからね!</p>
+       </div>
+       <button class="btn11" button onclick="goNext1()">第２問に進む</button>
+    </div>
+    
+      <script src="scrippt.js"></script>
+     </body>
+ 
+
