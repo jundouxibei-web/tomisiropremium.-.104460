@@ -49,11 +49,13 @@ margin: 40px auto;
     opacity: 0;
     transform: translateY(-50px);
   }
-}.waku {
+}
+
+.waku {
     padding: 2em 2em;
     margin: 0.5em 0;
     color: #FFF;
-    font-size: 15px;
+    font-size: 30px;
     text-align: center;
     background: #6eb7ff;
     border-bottom: solid 6px #3f87ce;
@@ -103,6 +105,18 @@ margin: 40px auto;
     margin: 0; 
     padding: 0;
 }
+.answaku{
+    padding: 8px 19px;
+    margin: 4em 0;
+    color: #2c2c2f;
+    background: #cde4ff;
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+}
+.answaku p {
+    margin: 0; 
+    padding: 0;
+}
   </style>
   </head>
   <body>
@@ -121,15 +135,18 @@ margin: 40px auto;
   </div>
     &emsp;
     <h2 style="text-align:center">例題　<font color="fuchsia">これはなにシロー？</font></h2>
+     &emsp;
     <p style="text-align:center"><img src="susiro-.jpg" width="100%" height="100%"></p>
     &nbsp;&nbsp;
-    <h2><font color="red">回答　すシロー</font></h2>
+    <div class="answaku">
+    <h1>回答　すシロー</h1>
+</div>
     <div class="ans">
 <p>この問題は簡単だったね！すし職人の格好をしたとよシロー、つまり「すシロー」です。<br>
       こんな感じの問題を10問用意したから全問正解目指して頑張ろう!
     </p></div>
     &ensp;
-    <button class="btn"　button onclick="goNext()">クイズを始める</button>
+    <button class="btn"　button onclick="goNext0()">クイズを始める</button>
   <p id="moji"></p>
   <script src="scrippt.js"></script>
    </body>
