@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>とよシローなにシロークイズ</title>
+  
+<!-- Google Fonts -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap">
  </head>
- <style>.tite {
+ <style>
+
+ .tite {
     margin: 1em 0;
     background: #fff9dc;
     text-align: center;
@@ -140,21 +145,40 @@ margin: 40px auto;
 
 
 
+.seikai {
+  font-family: "Yusei Magic", sans-serif;
+  color: red;
+  font-size: 60px;
+}
+
+.huseikai {
+  font-family:  "Yusei Magic", sans-serif;
+  color: blue;
+  font-size: 60px;
+}
+
+
+
+
+
 </style>
  <body>
-
     <div class="tite">
     <div class="box-title"><h1>第１問</h1></div>
     <p><h1>これはなにシロー？</h1></p>
 </div>
  <p style="text-align:center"><img src="trumpetoyosiro-.jpg"  width="100%" height="100%"></p>
     &nbsp;&nbsp;
-    <div class="toi1">
+    <div class="toi">
 <h1>回答を入力</h1>
 <input type="text" class="kai" id="toyo1">
 <button class="btn1" button onclick="check1()">答えを見る</button>
 </div>
-    <div class="kai1" style="display: none;">
+<p class="seikai"style="display:none;">正解！</p>
+<p class="ome" style="display:none;"><img src="wai.jpg"  width="40%" height="40%"></p>
+<p class="huseikai"style="display:none;">不正解</p>
+<p class="zan" style="display:none;"><img src="joy.jpg"  width="40%" height="40%"></p>
+    <div class="kaito" style="display: none;">
         <div class="answaku">
            <h1>回答　とらんぺっとよシロー</h1>
         </div>
@@ -164,7 +188,7 @@ margin: 40px auto;
        </div>
        <button class="btn11" button onclick="goNext1()">第２問に進む</button>
     </div>
-    
+    <span id="score"　style="display: none;"></span>
       <script src="scrippt.js"></script>
      </body>
  
