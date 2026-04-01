@@ -7,9 +7,11 @@ btn.classList.add('move-out');
   setTimeout(() => {
     location.href = 'index2.html';
   }, 600);
+    localStorage.setItem("score", 0);
 }
 
 let score = Number(localStorage.getItem("score")) || 0;
+
 
 const answer1 = "とらんぺっとよシロー"; // 正解（例）
 const answer2 = "らびっとよシロー";
@@ -347,3 +349,37 @@ btn.classList.add('move-out');
     location.href = 'index12.html';
   }, 100);
 }
+
+function check11() {
+    
+  document.querySelector('.toi').style.display = 'none';
+  document.querySelector('.kaito').style.display = 'block';
+
+if (score >=0){
+    if(score<=4){
+     document.getElementById("yon").textContent = "君の得点は５点も取れていないみたい！そんな君はとよシロー検定８級不合格レベル！８級は英検５級レベルだから実質小卒並みの知能！もっと精進が必要だね！";
+    }
+}
+
+if (score >=5){
+    if(score<=9){
+        document.getElementById('kyu').textContent = "君は得点５点以上を取れているからとよシロー検定３級レベル！とよシローの変化にいち早く気づいて行動できる優秀な人材でもあります！ひとまずおめでとう！";
+    }
+}
+
+if (score == 10){
+        document.getElementById('jyu').textContent = "答え覚えてたんやろカス";
+}
+
+}
+
+document.getElementById("result").textContent =  score + "点";
+
+
+
+const share_title = `とよシロークイズ...${score}点でした。`;
+  const share_twitter = document.getElementById("js-share-twitter");
+  share_twitter.setAttribute(
+      "href",
+      "https://twitter.com/share?url=" + "https://jundouxibei-web.github.io/tomisiropremium.-.104460/" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ"
+  );
