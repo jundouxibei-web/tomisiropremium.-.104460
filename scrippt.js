@@ -373,7 +373,7 @@ if (score == 10){
 
 if (score >=11){
     if(score<=20){
-        document.getElementById('baka').textContent = "このゲームのバグを見つけたのかな？このプログラムは初めの「クイズを始める」を押さない限りは無限に点が増え続ける使用なんだ。";
+        document.getElementById('baka').textContent = "このゲームのバグを見つけたのかな？このプログラムは初めの「クイズを始める」を押さない限りは無限に点が増え続ける仕様なんだ。";
     }
 }
 
