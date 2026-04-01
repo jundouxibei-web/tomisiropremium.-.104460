@@ -372,7 +372,7 @@ if (score == 10){
 }
 
 if (score >=11){
-    if(score<=20){
+    if(score<=19){
         document.getElementById('baka').textContent = "このゲームのバグを見つけたのかな？このプログラムは初めの「クイズを始める」を押さない限りは無限に点が増え続ける仕様なんだ。";
     }
 }
