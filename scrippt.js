@@ -375,11 +375,11 @@ if (score == 10){
 
 document.getElementById("result").textContent =  score + "点";
 
-
-
-const share_title = `とよシロークイズ...${score}点でした。`;
+const share_title = `とよシローなにシロークイズ${score}点でした。`;
   const share_twitter = document.getElementById("js-share-twitter");
   share_twitter.setAttribute(
       "href",
       "https://twitter.com/share?url=" + "https://jundouxibei-web.github.io/tomisiropremium.-.104460/" + "&text=" + share_title + "&hashtags=とよシローなにシロークイズ"
   );
+
+
