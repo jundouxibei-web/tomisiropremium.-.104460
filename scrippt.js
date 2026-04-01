@@ -371,6 +371,16 @@ if (score == 10){
         document.getElementById('jyu').textContent = "答え覚えてたんやろカス";
 }
 
+if (score >=11){
+    if(score<=20){
+        document.getElementById('baka').textContent = "このゲームのバグを見つけたのかな？このプログラムは初めの「クイズを始める」を押さない限りは無限に点が増え続ける使用なんだ。";
+    }
+}
+
+if (score >= 20){
+        document.getElementById('aho').textContent = "これいじょうは飽きたでしょ、、、とよシローなにシロークイズ２もお楽しみに！";
+}
+
 }
 
 document.getElementById("result").textContent =  score + "点";
